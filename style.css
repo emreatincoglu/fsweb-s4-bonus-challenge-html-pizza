@@ -23,7 +23,7 @@ body {
   text-align: center;
   position: relative;
   overflow: hidden;
-  padding-bottom: 150px;
+  padding-bottom: 180px;
   background-image: url('public/assets/iteration-1/bg-red.svg');
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -112,14 +112,16 @@ body {
 }
 
 .category-menu {
-  margin-top: -50px;
-  position: relative;
-  z-index: 30;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   background-color: white;
-  padding: 20px 0;
-  margin-bottom: 50px;
+  padding: 25px 0;
+  margin-bottom: 0;
   border-radius: 0;
   box-shadow: none;
+  z-index: 30;
 }
 
 .category-menu ul {
@@ -129,6 +131,7 @@ body {
   gap: 40px;
   flex-wrap: wrap;
   padding: 0;
+  margin: 0;
 }
 
 .category-menu a {
@@ -168,6 +171,10 @@ body {
 
 .category-menu a:hover img {
   transform: scale(1.1);
+}
+
+main.container {
+  margin-top: 50px;
 }
 
 .offers-section {
@@ -604,7 +611,7 @@ footer {
 @media (max-width: 768px) {
   .hero-section {
     min-height: 600px;
-    padding-bottom: 120px;
+    padding-bottom: 150px;
   }
   
   .hero-content h1 {
@@ -625,7 +632,7 @@ footer {
   }
   
   .category-menu {
-    margin-top: -30px;
+    padding: 20px 0;
   }
   
   .category-menu ul {
@@ -640,6 +647,10 @@ footer {
   .category-menu img {
     width: 35px;
     height: 35px;
+  }
+  
+  main.container {
+    margin-top: 30px;
   }
   
   .offers-section {
@@ -687,7 +698,7 @@ footer {
     min-width: 80px;
     padding: 15px 10px;
   }
-
+  
   .menu-categories img {
     width: 35px;
     height: 35px;
@@ -726,7 +737,7 @@ footer {
 @media (max-width: 480px) {
   .hero-section {
     min-height: 500px;
-    padding-bottom: 100px;
+    padding-bottom: 120px;
   }
   
   .hero-content h1 {
@@ -747,7 +758,7 @@ footer {
   }
   
   .category-menu {
-    margin-top: -20px;
+    padding: 15px 0;
   }
   
   .category-menu ul {
@@ -762,6 +773,10 @@ footer {
   .category-menu img {
     width: 30px;
     height: 30px;
+  }
+  
+  main.container {
+    margin-top: 20px;
   }
   
   .section-title {
